@@ -42,7 +42,7 @@
 		<div class="ui attached segment">
 			<div class="ui list">
 				{{if $.EnableNotifyMail}}
-				<div class="item">
+				<div class="field">
 					<div class="tw-mb-2">{{ctx.Locale.Tr "settings.email_desc"}}</div>
 					<form action="{{AppSubUrl}}/user/settings/account/email" class="ui form" method="post">
 						{{$.CsrfTokenHtml}}
