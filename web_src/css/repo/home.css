@@ -91,3 +91,28 @@
   padding: 0 0.5em; /* make the UI look better for narrow (mobile) view */
   text-decoration: none;
 }
+
+.repo-view-container{
+  align-items:flex-start;
+}
+
+.repo-view-container .repo-view-file-tree-container{
+  display:flex;
+  flex-direction:column;
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow:hidden;
+}
+
+.repo-view-file-tree-container .repo-button-row{
+  position:sticky; top:0; z-index:2;
+  background:var(--color-body);
+}
+
+.repo-view-file-tree-container .view-file-tree-items{
+  flex:1 1 auto;
+  min-height:0;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+}
